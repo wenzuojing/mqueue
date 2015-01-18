@@ -14,6 +14,9 @@ import com.mongodb.DBCollection;
 import com.mongodb.DBObject;
 import com.mongodb.MongoClient;
 
+/**
+ * @author wens
+ */
 public class SimpleConsumer implements Consumer {
 	private MongoClient mongoClient;
 	private DB queueDb;
@@ -46,14 +49,12 @@ public class SimpleConsumer implements Consumer {
 		}
 
 		list2.add(listener);
-
 	}
 
 	private void start(final String group) {
 		executorService.execute(new Runnable() {
 			@Override
 			public void run() {
-
 				while (true) {
 					Set<String> topics = topicListeners.keySet();
 

@@ -1,5 +1,9 @@
 package com.mongodb.queue;
 
+
+/**
+ * @author wens
+ */
 public class ConfigException  extends RuntimeException {
 
 	public ConfigException() {

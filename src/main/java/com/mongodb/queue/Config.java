@@ -10,6 +10,9 @@ import com.mongodb.MongoClientOptions;
 import com.mongodb.ServerAddress;
 import com.mongodb.MongoClientOptions.Builder;
 
+/**
+ * @author wens
+ */
 public class Config {
 	
 

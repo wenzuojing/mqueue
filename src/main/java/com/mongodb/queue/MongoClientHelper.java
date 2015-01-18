@@ -2,6 +2,9 @@ package com.mongodb.queue;
 
 import com.mongodb.MongoClient;
 
+/**
+ * @author wens
+ */
 public class MongoClientHelper {
 
 	private static MongoClient mongoClient;

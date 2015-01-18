@@ -9,7 +9,6 @@ mqueue是一个基于mongodb的简单消息队列，其的使用方式和其他M
 * Topic （T）：可以理解为一个队列
 * Consumer Group （CG）：一个 topic可以有多个CG。topic的消息会复制（不是真的复制，是概念上的）到所有的CG，但每个CG只会把消息发给该CG中的一个 consumer。如果需要实现广播，只要每个consumer有一个独立的CG就可以了。要实现单播只要所有的consumer在同一个CG。用CG还 可以将consumer进行自由的分组而不需要多次发送消息到不同的topic。
 
-
 #使用方式
 
 设置mongodb-queue.properties

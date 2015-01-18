@@ -4,6 +4,10 @@ import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.ThreadFactory;
 
+
+/**
+ * @author wens
+ */
 public class ThreadHelper {
 
 	public static ExecutorService newExecutor(final String name, int num) {

@@ -7,6 +7,9 @@ import com.mongodb.MongoClient;
 import com.mongodb.WriteConcern;
 import com.mongodb.WriteResult;
 
+/**
+ * @author wens
+ */
 public class SimpleProducer implements Producer {
 
 	private MongoClient mongoClient;
