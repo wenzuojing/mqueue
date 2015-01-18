@@ -6,6 +6,7 @@ import java.util.Set;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.Executor;
 import java.util.concurrent.ExecutorService;
+import java.util.concurrent.TimeUnit;
 
 import com.mongodb.BasicDBObject;
 import com.mongodb.DB;
@@ -89,7 +90,15 @@ public class SimpleConsumer implements Consumer {
 									}
 								}
 							});
-						}
+						}else{
+
+                            try {
+                                TimeUnit.SECONDS.sleep(1);
+                            } catch (InterruptedException e) {
+                                Thread.currentThread().interrupt();
+                            }
+
+                        }
 
 					}
 				}
